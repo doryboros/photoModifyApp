@@ -4,9 +4,7 @@ function canExecuteFormat(array $payload2){
     if(!isset($payload2['format'])){
         return $payload2;
     }
-    else{
         return executeFormat($payload2);
-    }
 }
 
 function executeFormat(array $payload2):array{

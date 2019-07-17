@@ -4,9 +4,8 @@ function canExecuteHeight(array $payload2){
     if(!isset($payload2['height'])){
         return $payload2;
     }
-    else{
+
         return executeHeight($payload2);
-    }
 }
 
 function executeHeight(array $payload2):array{

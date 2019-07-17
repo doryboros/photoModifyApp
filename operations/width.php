@@ -9,9 +9,10 @@ function canExecuteWidth(array $payload2,$image){
     }
 }
 
-function executeWidth($image,$widthValue){
+function executeWidth($payload2,int $widthValue){
 
-    $image->thumbnailImage(castType($widthValue),$image->getImageHeight);
+    $payload2['image']->adaptiveResizeImage(castType($widthValue),$image->getImageHeight);
+    return $payload2;
 }
 
 function castType($width){

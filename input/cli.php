@@ -15,8 +15,8 @@ function insertArgsInPayload(array $args, array $payload = []):array{
         $key=str_replace("--","",$argument[0]);
         $value=$argument[1];
         $payload[$key]=$value;
-        var_dump($payload);
 
     }
+
     return $payload;
 }

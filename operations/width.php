@@ -1,20 +1,25 @@
 <?php
 
-function canExecuteWidth(array $payload2,$image){
-    if(!isset($payload2['width'])){
+function canExecuteWidth(array $payload2){
+    if(!isset($payload2['width']) || isset($payload2['format'])){
         return $payload2;
     }
     else{
-        executeWidth($image,$payload2["width"]);
+        return executeWidth($payload2);
     }
 }
 
-function executeWidth($payload2,int $widthValue){
+function executeWidth(array $payload2):array{
 
-    $payload2['image']->adaptiveResizeImage(castType($widthValue),$image->getImageHeight);
+    /** @var \Imagick $resource
+    */
+    $resource=$payload2['image'];
+    $resource->scaleImage(castWidth($payload2['width']),0);
+    $payload2['image']=$resource;
+
     return $payload2;
 }
 
-function castType($width){
+function castWidth($width){
     return (int)$width;
 }

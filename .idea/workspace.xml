@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e7259de-cea4-4c99-8a97-d253bb3102e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/addWatermark/addWatermark.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/operations/format.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/operations/height.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/cli.php" beforeDir="false" afterPath="$PROJECT_DIR$/input/cli.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myCommandLineTool.php" beforeDir="false" afterPath="$PROJECT_DIR$/myCommandLineTool.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/operations/width.php" beforeDir="false" afterPath="$PROJECT_DIR$/operations/width.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saveImage/saveImg" beforeDir="false" afterPath="$PROJECT_DIR$/saveImage/saveImg.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saveImage/saveImg.php" beforeDir="false" afterPath="$PROJECT_DIR$/saveImage/saveImg.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,26 +27,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myCommandLineTool.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state relative-caret-position="225">
+              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/operations/width.php">
+        <entry file="file://$PROJECT_DIR$/operations/format.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="90" lean-forward="true" selection-start-line="13" selection-start-column="90" selection-end-line="13" selection-end-column="90" />
+            <state relative-caret-position="405">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/addWatermark/addWatermark.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/input/cli.php">
+        <entry file="file://$PROJECT_DIR$/operations/height.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+            <state relative-caret-position="135">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -50,13 +59,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/loadImage/readImg.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+            <state relative-caret-position="195">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/input/cli.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/saveImage/saveImg.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -74,10 +92,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/loadIamge/readImg.php" />
-        <option value="$PROJECT_DIR$/input/cli.php" />
-        <option value="$PROJECT_DIR$/operations/width.php" />
-        <option value="$PROJECT_DIR$/loadImage/readImg.php" />
         <option value="$PROJECT_DIR$/saveImage/saveImg" />
+        <option value="$PROJECT_DIR$/loadImage/readImg.php" />
+        <option value="$PROJECT_DIR$/input/cli.php" />
+        <option value="$PROJECT_DIR$/saveImage/saveImg.php" />
+        <option value="$PROJECT_DIR$/operations/width.php" />
+        <option value="$PROJECT_DIR$/operations/height.php" />
+        <option value="$PROJECT_DIR$/operations/format.php" />
         <option value="$PROJECT_DIR$/myCommandLineTool.php" />
       </list>
     </option>
@@ -101,6 +122,11 @@
             <path>
               <item name="photoModifyApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="photoModifyApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="photoModifyApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="photoModifyApp" type="462c0819:PsiDirectoryNode" />
+              <item name="addWatermark" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="photoModifyApp" type="b2602c69:ProjectViewProjectNode" />
@@ -155,15 +181,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.myCommandLineTool.php">
+  <component name="RunManager" selected="PHP Script.width.php">
     <configuration name="cli.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/input/cli.php">
       <method v="2" />
     </configuration>
     <configuration name="myCommandLineTool.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/myCommandLineTool.php">
       <method v="2" />
     </configuration>
+    <configuration name="width.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/operations/width.php">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.width.php" />
         <item itemvalue="PHP Script.myCommandLineTool.php" />
         <item itemvalue="PHP Script.cli.php" />
       </list>
@@ -180,12 +210,12 @@
       <option name="presentableId" value="Default" />
       <updated>1563265643087</updated>
       <workItem from="1563265645373" duration="13283000" />
-      <workItem from="1563346499799" duration="1776000" />
+      <workItem from="1563346499799" duration="8807000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15059000" />
+    <option name="totallyTimeSpent" value="22090000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -200,7 +230,7 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16602103" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16602103" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -213,7 +243,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.42224622" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.42224622" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -245,25 +275,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/operations/width.php</url>
-          <line>13</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/imagick/imagick.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="1845" column="22" selection-start-line="1845" selection-start-column="22" selection-end-line="1845" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -278,36 +290,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/operations/width.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="90" lean-forward="true" selection-start-line="13" selection-start-column="90" selection-end-line="13" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/input/cli.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/saveImage/saveImg">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loadImage/readImg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myCommandLineTool.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/saveImage/saveImg.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -315,6 +299,58 @@
           <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input/cli.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/imagick/imagick.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="1838" column="20" selection-start-line="1838" selection-start-column="20" selection-end-line="1838" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loadImage/readImg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/operations/width.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="28" selection-start-line="15" selection-start-column="4" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/operations/format.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/operations/height.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myCommandLineTool.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addWatermark/addWatermark.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

@@ -5,17 +5,18 @@ function readCommand(array $argv):array{
     return $argv;
 }
 
-function insertArgsInPayload(array $args, array $payload):array{
+function insertArgsInPayload(array $arguments, array $payload):array{
 
-    foreach ($args as $argument){
+    foreach ($arguments as $argument){
 
         $argument=explode("=",$argument);
-        $key=str_replace("--","",$argument[0]);
+        $key=$argument[0];
 
-        if($key=='help'){
+        if($key=='--help'){
             $value="";
         }else {
-            $value=$argument[1];
+            $value="";
+            if(count($argument)==2) $value=$argument[1];
         }
 
         $payload[$key]=$value;

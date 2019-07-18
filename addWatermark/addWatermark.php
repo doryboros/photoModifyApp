@@ -1,7 +1,7 @@
 <?php
 
 function canExecuteWatermark(array $payload2){
-    if(!isset($payload2['watermark'])){
+    if(!isset($payload2['--watermark'])){
         return $payload2;
     }
 
@@ -32,16 +32,16 @@ function executeWatermark(array $payload2):array{
 
     /** @var \Imagick $resource
      */
-    $resource=$payload2['image'];
+    $resource=$payload2['--image'];
 
     $watermark = new Imagick();
-    $watermark->readImage($payload2['watermark']);
+    $watermark->readImage($payload2['--watermark']);
     $watermark->scaleImage(($resource->getImageWidth())/10,0);
 
     $corner=randomCorner($resource,$watermark);
     $resource->compositeImage($watermark, imagick::COMPOSITE_OVER, $corner[0], $corner[1]);
 
-    $payload2['image']=$resource;
+    $payload2['--image']=$resource;
 
     return $payload2;
 }

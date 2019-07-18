@@ -1,9 +1,9 @@
 <?php
 
-function saveImage(array $payload2){
+function saveImage(array $payload2):bool{
 
-    $fileName=$payload2['output-file'];
-    $resource=$payload2['image'];
-    $resource->writeImage($fileName);
+    $fileName=$payload2['--output-file'];
+    $resource=$payload2['--image'];
+    return $resource->writeImage($fileName);
 
 }

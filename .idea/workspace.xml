@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="387b2216-431d-49fe-a2db-fb7db4f1c4dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/addPhotoForm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/showSuccess.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addPhotoForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/addPhotoForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/0cc175b9c0f1b6a831c399e269772661/66163221_2589014904451031_5806599809129250816_n.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/0cc175b9c0f1b6a831c399e269772661/66163221_2589014904451031_5806599809129250816_n.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/0cc175b9c0f1b6a831c399e269772661/watermark.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/0cc175b9c0f1b6a831c399e269772661/watermark.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addPhotoForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="114" column="8" selection-start-line="114" selection-start-column="8" selection-end-line="114" selection-end-column="8" />
+            <state relative-caret-position="630">
+              <caret line="116" column="12" selection-start-line="116" selection-start-column="12" selection-end-line="116" selection-end-column="12" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -105,6 +106,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -142,12 +144,12 @@
       <option name="presentableId" value="Default" />
       <updated>1563517637634</updated>
       <workItem from="1563517639123" duration="11103000" />
-      <workItem from="1563533728398" duration="7613000" />
+      <workItem from="1563533728398" duration="9076000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18716000" />
+    <option name="totallyTimeSpent" value="20179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -187,8 +189,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addPhotoForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="114" column="8" selection-start-line="114" selection-start-column="8" selection-end-line="114" selection-end-column="8" />
+        <state relative-caret-position="630">
+          <caret line="116" column="12" selection-start-line="116" selection-start-column="12" selection-end-line="116" selection-end-column="12" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

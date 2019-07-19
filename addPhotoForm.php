@@ -2,7 +2,7 @@
 
 const UPLOAD_PATH="/var/www/my-application/uploads/";
 
-//ini_set("display_errors","on");
+ini_set("display_errors","on");
 
     if (isset($_POST['submit'])){
 
@@ -87,10 +87,12 @@ const UPLOAD_PATH="/var/www/my-application/uploads/";
             }
         }
 
+
         if(empty($errors)){
 
             $fileName = $_FILES['image']['name'];
             $fileTmp = $_FILES['image']['tmp_name'];
+
 
             function createHashForDirName(string $userName){
                 return md5($userName);
@@ -106,10 +108,13 @@ const UPLOAD_PATH="/var/www/my-application/uploads/";
                 createDirectory($dirHash);
             }
 
+            // save json data
+
+            $jsonFormData=json_encode($_POST);
+            file_put_contents("./uploads/".$dirHash."/jasonFormData.json",$jsonFormData);
+
             move_uploaded_file($fileTmp, UPLOAD_PATH.$dirHash."/".$fileName);
-
-
-
+            
            // header('Location: showSuccess.php');
         }
 

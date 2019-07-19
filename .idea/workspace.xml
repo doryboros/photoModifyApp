@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e7259de-cea4-4c99-8a97-d253bb3102e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/error/errors.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/showErrors.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/showSuccess.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addWatermark/addWatermark.php" beforeDir="false" afterPath="$PROJECT_DIR$/addWatermark/addWatermark.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/cli.php" beforeDir="false" afterPath="$PROJECT_DIR$/input/cli.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isHelp/isHelp.php" beforeDir="false" afterPath="$PROJECT_DIR$/isHelp/isHelp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loadImage/readImg.php" beforeDir="false" afterPath="$PROJECT_DIR$/loadImage/readImg.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCommandLineTool.php" beforeDir="false" afterPath="$PROJECT_DIR$/myCommandLineTool.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/operations/format.php" beforeDir="false" afterPath="$PROJECT_DIR$/operations/format.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/operations/height.php" beforeDir="false" afterPath="$PROJECT_DIR$/operations/height.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/operations/width.php" beforeDir="false" afterPath="$PROJECT_DIR$/operations/width.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/showHelp.php" beforeDir="false" afterPath="$PROJECT_DIR$/output/showHelp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photos/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/photos/img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photos/lala.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saveImage/saveImg.php" beforeDir="false" afterPath="$PROJECT_DIR$/saveImage/saveImg.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/validator/validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/validator/validate.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myCommandLineTool.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            <state relative-caret-position="330">
+              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -60,11 +45,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/validator/validate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+              <folding>
+                <element signature="e#8#60#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addWatermark/addWatermark.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="210">
+              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -81,8 +69,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/operations/format.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
+            <state relative-caret-position="228">
               <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loadImage/readImg.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/isHelp/isHelp.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+              <folding>
+                <element signature="e#7#56#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,7 +130,6 @@
         <option value="$PROJECT_DIR$/loadIamge/readImg.php" />
         <option value="$PROJECT_DIR$/saveImage/saveImg" />
         <option value="$PROJECT_DIR$/validator/paths.php" />
-        <option value="$PROJECT_DIR$/addWatermark/addWatermark.php" />
         <option value="$PROJECT_DIR$/loadImage/readImg.php" />
         <option value="$PROJECT_DIR$/operations/format.php" />
         <option value="$PROJECT_DIR$/operations/height.php" />
@@ -135,6 +143,7 @@
         <option value="$PROJECT_DIR$/input/cli.php" />
         <option value="$PROJECT_DIR$/myCommandLineTool.php" />
         <option value="$PROJECT_DIR$/validator/validate.php" />
+        <option value="$PROJECT_DIR$/addWatermark/addWatermark.php" />
       </list>
     </option>
   </component>
@@ -158,16 +167,6 @@
             <path>
               <item name="photoModifyApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="photoModifyApp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="photoModifyApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="photoModifyApp" type="462c0819:PsiDirectoryNode" />
-              <item name="saveImage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="photoModifyApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="photoModifyApp" type="462c0819:PsiDirectoryNode" />
-              <item name="validator" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -232,11 +231,12 @@
       <workItem from="1563265645373" duration="13283000" />
       <workItem from="1563346499799" duration="20807000" />
       <workItem from="1563448287000" duration="12672000" />
+      <workItem from="1563515392769" duration="1562000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46762000" />
+    <option name="totallyTimeSpent" value="48324000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -249,8 +249,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16768125" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16934144" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -320,13 +321,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lala.png" />
     <entry file="file://$PROJECT_DIR$/validator/pixels.php" />
-    <entry file="file://$PROJECT_DIR$/loadImage/readImg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/operations/height.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -336,16 +330,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/output/helpMessage.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/isHelp/isHelp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-          <folding>
-            <element signature="e#7#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/operations/width.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -361,38 +345,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/error/errors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/output/showErrors.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/operations/format.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addWatermark/addWatermark.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/saveImage/saveImg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -403,6 +359,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/validator/validate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+          <folding>
+            <element signature="e#8#60#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saveImage/saveImg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/operations/format.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loadImage/readImg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/isHelp/isHelp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding>
+            <element signature="e#7#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/input/cli.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -410,17 +407,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myCommandLineTool.php">
+    <entry file="file://$PROJECT_DIR$/error/errors.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        <state relative-caret-position="90">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/validator/validate.php">
+    <entry file="file://$PROJECT_DIR$/addWatermark/addWatermark.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        <state relative-caret-position="210">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myCommandLineTool.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
         </state>
       </provider>
     </entry>

@@ -1,6 +1,10 @@
 <?php
 
-// validate the command
+/**
+ *
+ * @param array $payload
+ * @return array
+ */
 
 function validateCommand(array $payload):array{
     $errors=[];

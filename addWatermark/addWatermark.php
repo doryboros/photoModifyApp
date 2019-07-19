@@ -8,6 +8,14 @@ function canExecuteWatermark(array $payload2){
         return executeWatermark($payload2);
 }
 
+/**
+ * get a random corner on the image
+ *
+ * @param $image
+ * @param $watermark
+ * @return mixed
+ */
+
 function randomCorner($image,$watermark){
 
     /** @var \Imagick $resource

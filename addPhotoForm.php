@@ -1,8 +1,14 @@
 <?php
 
+session_start();
+
+include "functions.php";
+
 const UPLOAD_PATH="/var/www/my-application/uploads/";
 
-ini_set("display_errors","on");
+//ini_set("display_errors","on");
+
+    // process form data
 
     if (isset($_POST['submit'])){
 
@@ -15,6 +21,7 @@ ini_set("display_errors","on");
         $cameraSpecs=addslashes($_POST['cameraSpecs']);
         $price=addslashes($_POST['price']);
         $captureDate=addslashes($_POST['captureDate']);
+
 
         if(isset($_POST['tags'])){
 
@@ -87,20 +94,17 @@ ini_set("display_errors","on");
             }
         }
 
+        // save form data
 
         if(empty($errors)){
 
             $fileName = $_FILES['image']['name'];
             $fileTmp = $_FILES['image']['tmp_name'];
 
+            // get the image name without the extension
 
-            function createHashForDirName(string $userName){
-                return md5($userName);
-            }
-
-            function createDirectory(string $dirName){
-                mkdir("./uploads/".$dirName);
-            }
+            $imageNameAndExtension=explode(".",$fileName);
+            $imageName=$imageNameAndExtension[0];
 
             $dirHash=createHashForDirName($artistName);
 
@@ -108,14 +112,22 @@ ini_set("display_errors","on");
                 createDirectory($dirHash);
             }
 
+            // send parameters to the success page
+
+            $_SESSION['filePath']=UPLOAD_PATH.$dirHash;
+            $_SESSION['imageName']=$fileName;
+            $_SESSION['jsonFileName']=$imageName;
+
             // save json data
 
             $jsonFormData=json_encode($_POST);
-            file_put_contents("./uploads/".$dirHash."/jasonFormData.json",$jsonFormData);
+            file_put_contents("./uploads/".$dirHash."/".$imageName.".json",$jsonFormData);
 
-            move_uploaded_file($fileTmp, UPLOAD_PATH.$dirHash."/".$fileName);
-            
-           // header('Location: showSuccess.php');
+            // save the image from tmp
+
+            if(move_uploaded_file($fileTmp, UPLOAD_PATH.$dirHash."/".$fileName)){
+                header('Location: showSuccess.php');
+            }
         }
 
     }

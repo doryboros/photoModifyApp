@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="387b2216-431d-49fe-a2db-fb7db4f1c4dd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addPhotoForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/addPhotoForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/0cc175b9c0f1b6a831c399e269772661/66163221_2589014904451031_5806599809129250816_n.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/0cc175b9c0f1b6a831c399e269772661/66163221_2589014904451031_5806599809129250816_n.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/0cc175b9c0f1b6a831c399e269772661/watermark.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/0cc175b9c0f1b6a831c399e269772661/watermark.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/showSuccess.php" beforeDir="false" afterPath="$PROJECT_DIR$/showSuccess.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/0cc175b9c0f1b6a831c399e269772661/66163221_2589014904451031_5806599809129250816_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/0cc175b9c0f1b6a831c399e269772661/jasonFormData.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/0cc175b9c0f1b6a831c399e269772661/watermark.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,23 +37,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addPhotoForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="116" column="12" selection-start-line="116" selection-start-column="12" selection-end-line="116" selection-end-column="12" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="-15">
+              <caret line="86" column="46" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/showSuccess.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+            <state relative-caret-position="-131">
+              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -63,19 +64,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/addPhotoForm.html" />
-        <option value="$PROJECT_DIR$/showSuccess.php" />
+        <option value="$PROJECT_DIR$/uploads/functions.php" />
+        <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/addPhotoForm.php" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/my-application.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/php.xml" />
+        <option value="$PROJECT_DIR$/showSuccess.php" />
       </list>
     </option>
   </component>
@@ -91,6 +83,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -98,11 +91,15 @@
               <item name="my-application" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-application" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="my-application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-application" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -144,18 +141,19 @@
       <option name="presentableId" value="Default" />
       <updated>1563517637634</updated>
       <workItem from="1563517639123" duration="11103000" />
-      <workItem from="1563533728398" duration="9076000" />
+      <workItem from="1563533728398" duration="9313000" />
+      <workItem from="1563780338663" duration="8621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20179000" />
+    <option name="totallyTimeSpent" value="29037000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25235197" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.255119" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -180,20 +178,31 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/showSuccess.php">
+    <entry file="file://$PROJECT_DIR$/uploads/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <caret line="2" selection-start-line="2" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addPhotoForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="116" column="12" selection-start-line="116" selection-start-column="12" selection-end-line="116" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="-15">
+          <caret line="86" column="46" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/showSuccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-131">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
         </state>
       </provider>
     </entry>

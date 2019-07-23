@@ -29,49 +29,53 @@ $formData=json_decode($jsonFileContent,true);
     </head>
 
     <body>
-        <h1>Saved form data</h1>
 
-        <div>
-            Image title: <?php echo $formData['imageTitle'];?>
-        </div>
+        <div class="container">
 
-        <div>
-            Image description: <?php echo $formData['imageDescription'];?>
-        </div>
+            <h1 class="jumbotron">We received the following data</h1>
 
-        <div>
-            Artist name: <?php echo $formData['artistName'];?>
-        </div>
+            <div class="well well-sm">
+                Image title: <?php echo $formData['imageTitle'];?>
+            </div>
 
-        <div>
-            Artist email: <?php echo $formData['artistEmail'];?>
-        </div>
+            <div class="well well-sm">
+                Image description: <?php echo $formData['imageDescription'];?>
+            </div>
 
-        <div>
-            Camera specifications: <?php echo $formData['cameraSpecs'];?>
-        </div>
+            <div class="well well-sm">
+                Artist name: <?php echo $formData['artistName'];?>
+            </div class="well well-sm">
 
-        <div>
-            Price: <?php echo $formData['price'];?>
-        </div>
+            <div class="well well-sm">
+                Artist email: <?php echo $formData['artistEmail'];?>
+            </div>
 
-        <div>
-            Capture date: <?php echo $formData['captureDate'];?>
-        </div>
+            <div class="well well-sm">
+                Camera specifications: <?php echo $formData['cameraSpecs'];?>
+            </div>
 
-        <div>
-            Tags:
-            <?php
+            <div class="well well-sm">
+                Price: <?php echo $formData['price'];?>
+            </div>
+
+            <div class="well well-sm">
+                Capture date: <?php echo $formData['captureDate'];?>
+            </div>
+
+            <div class="well well-sm">
+                Tags:
+                <?php
                 foreach ($formData['tags'] as $item)
                     echo $item." ";
-             ?>
-        </div>
+                ?>
+            </div>
 
-        <div>
-            Image: </br>
-            <img src="<?php echo $imagePath;?>" class="img-thumbnail" width="200" height="200">
-        </div>
+            <div class="text-center">
+                Image: </br>
+                <img src="<?php echo $imagePath;?>" class="img-thumbnail" width="200" height="200">
+            </div>
 
+        </div>
 
     </body>
 

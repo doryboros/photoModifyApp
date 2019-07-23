@@ -142,10 +142,17 @@ const UPLOAD_PATH="/var/www/my-application/uploads/";
 
         <title>Upload photo</title>
 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
         <style>
             label{
                 font-weight: bold;
                 padding: 10px;
+                font-size: 20px;
             }
             input, select, textarea{
                 margin: 10px;
@@ -156,55 +163,72 @@ const UPLOAD_PATH="/var/www/my-application/uploads/";
 
     <body>
 
-        <h1>Upload your work</h1>
-
         <?php if (isset($_POST) && isset($errors)) {?>
             <div style="color: red"><?php echo implode('</br>', $errors); ?></div>
         <?php } ?>
 
-        <form action="" method="POST" enctype="multipart/form-data">
+        <div class="container">
 
-            <fieldset>
-                <legend>Upload photo:</legend>
+            <h1 class="jumbotron">Upload your work</h1>
 
-                <label for="imageTitle">Image title</label></br>
-                <input type="text" name="imageTitle" id="imageTitle"></br>
-
-                <label for="imageDescription">Image description</label></br>
-                <textarea name="imageDescription" id="imageDescription" rows="3" cols="20"></textarea></br>
-
-                <label for="artistEmail">Artist email</label></br>
-                <input type="email" name="artistEmail" id="artistEmail"></br>
-
-                <label for="artistName">Artist name</label></br>
-                <input type="text" name="artistName" id="artistName"></br>
-
-                <label for="cameraSpecs">Camera specifications</label></br>
-                <input type="text" name="cameraSpecs" id="cameraSpecs"></br>
-
-                <label for="price">Price</label></br>
-                <input type="number" name="price" id="price" step="0.01" min="0"></br>
-
-                <label for="captureDate">Capture date</label></br>
-                <input type="date" name="captureDate" id="captureDate"></br>
-
-                <label for="tags">Tags</label></br>
-                <select id="tags" name="tags[]" multiple="multiple">
-                    <option value="nature">Nature</option>
-                    <option value="animal">Animal</option>
-                    <option value="urban">Urban</option>
-                </select></br>
-
-                <label for="image">Select a file</label></br>
-                <input type="file" name="image" id="image"/><br>
-
-                <input type="submit" name="submit" value="Submit">
-                <input type="reset" value="Reset">
-
-            </fieldset>
+            <form action="" method="POST" enctype="multipart/form-data">
 
 
-        </form>
+                <div class="form-group">
+                    <label for="imageTitle" class="well well-sm">Image title</label>
+                    <input type="text" name="imageTitle" id="imageTitle" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="imageDescription" class="well well-sm">Image description</label>
+                    <textarea name="imageDescription" id="imageDescription" rows="3" cols="20" class="form-control"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="artistEmail" class="well well-sm">Artist email</label>
+                    <input type="email" name="artistEmail" id="artistEmail" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="artistName" class="well well-sm">Artist name</label>
+                    <input type="text" name="artistName" id="artistName" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="cameraSpecs" class="well well-sm">Camera specifications</label>
+                    <input type="text" name="cameraSpecs" id="cameraSpecs" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="price" class="well well-sm">Price</label>
+                    <input type="number" name="price" id="price" step="0.01" min="0" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="captureDate" class="well well-sm">Capture date</label>
+                    <input type="date" name="captureDate" id="captureDate" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="tags" class="well well-sm">Tags</label>
+                    <select id="tags" name="tags[]" multiple="multiple" class="form-control">
+                        <option value="nature">Nature</option>
+                        <option value="animal">Animal</option>
+                        <option value="urban">Urban</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="image" class="well well-sm">Select a file</label>
+                    <input type="file" name="image" id="image"class="custom-file-label">
+                </div>
+
+                <input type="submit" name="submit" value="Submit" class="btn btn-default">
+                <input type="reset" value="Reset" class="btn btn-default">
+
+            </form>
+
+        </div></br>
 
     </body>
 

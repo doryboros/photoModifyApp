@@ -1,6 +1,9 @@
 <?php
 
-class LoginRenderer{
+namespace MyApp\View\Renders;
+
+class showLoginFormRenderer
+{
 
     public function render()
     {

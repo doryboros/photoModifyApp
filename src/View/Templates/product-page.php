@@ -1,11 +1,2 @@
-<html>
 
-    <head>
-        <title>Product</title>
-    </head>
-
-    <body>
-    <?php echo "product page";?>
-    </body>
-
-</html>
+<?php echo "product page";?>

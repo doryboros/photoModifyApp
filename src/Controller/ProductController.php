@@ -2,26 +2,29 @@
 
 namespace MyApp\Controller;
 
-use MyApp\Model\DomainObject\Product;
 use MyApp\View\Renders\showProductRenderer;
 use MyApp\View\Renders\ShowProductsRenderer;
-use MyApp\View\Renders\showRegisterFormRenderer;
+use MyApp\Model\Persistence\PersistenceFactory;
+
 
 class ProductController
 {
     public static function showProducts()
     {
-        $products = [
-            (new Product())->setTitle('asd')->setId(2),
-            (new Product())->setTitle('asd')->setId(1),
-            (new Product())->setTitle('asd')->setId(3),
-            (new Product())->setTitle('asd'),
-            (new Product())->setTitle('asd'),
-            (new Product())->setTitle('asd'),
-            (new Product())->setTitle('asd'),
-            (new Product())->setTitle('asd'),
-            (new Product())->setTitle('asd'),
-        ];
+
+//        $test=\MyApp\Model\Persistence\PersistenceFactory::createMapper('product');
+//        $test->save(\MyApp\Model\DomainObject\Product::createFromRow([
+//            'id' => null,
+//            'title' => 'de ce',
+//            'description' => 'dd',
+//            'cameraSpecs' => 'dgfdg',
+//            'captureDate' => '2017-08-17',
+//            'thumbnailPath' => 'img/logo.jpg',
+//            'tags' => ['animal'],
+//            'userId' => 1]));
+
+        $productFinder = PersistenceFactory::createFinder('product');
+        $products = $productFinder->findAllProducts();
 
         (new ShowProductsRenderer())->render($products);
     }

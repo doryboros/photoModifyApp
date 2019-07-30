@@ -21,10 +21,6 @@ class Product
     /**
      * @var string
      */
-    private $tags;
-    /**
-     * @varstring
-     */
     private $cameraSpecs;
     /**
      * @var string
@@ -38,6 +34,44 @@ class Product
      * @var int
      */
     private $userId;
+
+    /**
+     * @var
+     */
+    private $tags;
+
+    public static function createFromRow(array $row)
+    {
+        $object = new self();
+
+        $object->id = $row['id'];
+        $object->title = $row['title'];
+        $object->description = $row['description'];
+        $object->cameraSpecs = $row['cameraSpecs'];
+        $object->captureDate = $row['captureDate'];
+        $object->thumbnailPath = $row['thumbnailPath'];
+        $object->tags=$row['tags'];
+        $object->userId = $row['userId'];
+
+        return $object;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTags()
+    {
+        return $this->tags;
+    }
+    /**
+     * @param array
+     * @return Product
+     */
+    public function setTags($tags)
+    {
+        $this->tags = $tags;
+        return $this;
+    }
 
     /**
      * @return string
@@ -91,24 +125,6 @@ class Product
     public function setDescription(string $description):self
     {
         $this->description = $description;
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getTags(): string
-    {
-        return $this->tags;
-    }
-
-    /**
-     * @param string $tags
-     * @return Product
-     */
-    public function setTags(string $tags):self
-    {
-        $this->tags = $tags;
         return $this;
     }
 

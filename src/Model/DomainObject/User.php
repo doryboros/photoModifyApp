@@ -34,7 +34,7 @@ class User
      * @param $email
      * @param $password
      */
-    public function __construct($id, $name, $email, $password)
+    public function __construct($id=null, $name, $email, $password)
     {
         $this->id = $id;
         $this->name = $name;
@@ -43,9 +43,9 @@ class User
     }
 
     /**
-     * @return int
+     * @return mixed
      */
-    public function getId(): int
+    public function getId()
     {
         return $this->id;
     }

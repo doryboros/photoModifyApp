@@ -1,34 +1,16 @@
-<?php /** @noinspection ALL */
+<?php
 
 
-namespace MyApp\Request;
+namespace MyApp\Http;
 
 
-class Request
+class Session
 {
     /**
      * @param string|null $key
      * @return mixed
      */
-    public function getPostData(?string $key)
-    {
-        return (empty($key)) ? $_POST : $_POST[$key];
-    }
-
-    /**
-     * @param string|null $key
-     * @return mixed
-     */
-    public function getGetData(?string $key)
-    {
-        return (empty($key)) ? $_GET : $_GET[$key];
-    }
-
-    /**
-     * @param string|null $key
-     * @return mixed
-     */
-    public function getSessionVariable(?string $key)
+    public function getSessionVariable(string $key=null)
     {
         if (!isset($_SESSION)) {
             session_start();
@@ -58,6 +40,5 @@ class Request
         }
         unset($_SESSION[$key]);
     }
-
 
 }

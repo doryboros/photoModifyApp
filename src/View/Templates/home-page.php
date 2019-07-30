@@ -1,8 +1,21 @@
 
-        <?php echo "home page";?>
+<?php echo "home page";?>
 
-        <ul>
-            <?php foreach ($products as $product): ?>
-                <li><a href="product/<?php echo $product->getId() ?>">Product name: <?= $product->getTitle() ?></a></li>
-            <?php endforeach ?>
-        </ul>
+<ul>
+    <?php foreach ($products as $product): ?>
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="<?= $product->getThumbnailPath() ?>" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">
+                       Product title: <?= $product->getTitle() ?>
+                </h5>
+                <p class="card-text">
+                    Product description:  <?= $product->getDescription() ?>
+                </p>
+                <a href="product/<?php echo $product->getId() ?>" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+    <?php endforeach ?>
+</ul>

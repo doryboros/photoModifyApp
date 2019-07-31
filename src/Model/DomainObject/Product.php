@@ -40,18 +40,42 @@ class Product
      */
     private $tags;
 
+    /**
+     * Product constructor.
+     * @param int $id
+     * @param string $title
+     * @param string $description
+     * @param string $cameraSpecs
+     * @param string $captureDate
+     * @param string $thumbnailPath
+     * @param int $userId
+     * @param $tags
+     */
+    public function __construct(string $title, string $description, string $cameraSpecs, string $captureDate, string $thumbnailPath, $tags, int $userId = null, int $id = null)
+    {
+        $this->id = $id;
+        $this->title = $title;
+        $this->description = $description;
+        $this->cameraSpecs = $cameraSpecs;
+        $this->captureDate = $captureDate;
+        $this->thumbnailPath = $thumbnailPath;
+        $this->userId = $userId;
+        $this->tags = $tags;
+    }
+
+
     public static function createFromRow(array $row)
     {
-        $object = new self();
+        $id = $row['id'];
+        $title = $row['title'];
+        $description = $row['description'];
+        $cameraSpecs = $row['cameraSpecs'];
+        $captureDate = $row['captureDate'];
+        $thumbnailPath = $row['thumbnailPath'];
+        $tags=$row['tags'];
+        $userId = $row['userId'];
 
-        $object->id = $row['id'];
-        $object->title = $row['title'];
-        $object->description = $row['description'];
-        $object->cameraSpecs = $row['cameraSpecs'];
-        $object->captureDate = $row['captureDate'];
-        $object->thumbnailPath = $row['thumbnailPath'];
-        $object->tags=$row['tags'];
-        $object->userId = $row['userId'];
+        $object = new self($title, $description, $cameraSpecs, $captureDate, $thumbnailPath, $tags, $userId, $id);
 
         return $object;
     }

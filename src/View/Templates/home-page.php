@@ -1,7 +1,6 @@
 
 <?php echo "home page";?>
-
-<ul>
+    <div class="container">
     <?php foreach ($products as $product): ?>
 
         <div class="card" style="width: 18rem;">
@@ -13,9 +12,11 @@
                 <p class="card-text">
                     Product description:  <?= $product->getDescription() ?>
                 </p>
-                <a href="product/<?php echo $product->getId() ?>" class="btn btn-primary">Go somewhere</a>
+                <a href="product/id/<?php echo $product->getId() ?>" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
 
     <?php endforeach ?>
-</ul>
+    </div>
+
+

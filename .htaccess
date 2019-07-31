@@ -1,6 +1,7 @@
+AcceptPathInfo On
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !(index\.php|public|css|js|robots\.txt)
-RewriteRule ^.*$ /index.php [L,QSA]
+RewriteRule ^(.*)$ /index.php/$1 [NC,L,QSA]

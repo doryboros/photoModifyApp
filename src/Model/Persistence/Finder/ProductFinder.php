@@ -10,9 +10,10 @@ class ProductFinder extends AbstractFinder
 {
     public function findById(int $id): Product
     {
-        $sql = "select * from product where id=?";
+        $sql = "select *, (select group_concat(tagName) from tag where id in (select tagId from product_tag where productId = ?)) as tags from product where id = ?";
         $statement = $this->getPdo()->prepare($sql);
         $statement->bindValue(1, $id, PDO::PARAM_INT);
+        $statement->bindValue(2, $id, PDO::PARAM_INT);
         $statement->execute();
         $row = $statement->fetch(PDO::FETCH_ASSOC);
         return $this->translateToProduct($row);
@@ -20,17 +21,19 @@ class ProductFinder extends AbstractFinder
 
     public function findAllProducts(): array
     {
-        $sql = "select * from product";
+        $sql = "select product.*, group_concat(tagName) as tags 
+                    from product 
+                    inner join product_tag on product.id = product_tag.productId 
+                    inner join tag on product_tag.tagId = tag.id 
+                    group by product.id";
+
         $statement = $this->getPdo()->prepare($sql);
         $statement->execute();
         $result = [];
         while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-            //$tags = $this->findProductTags($row['id']);
-            $row['tags'] = ['animal', 'doi tag'];
             $result[] = $this->translateToProduct($row);
         }
 
-//        $row = $statement->fetch(PDO::FETCH_ASSOC);
         return $result;
 
     }

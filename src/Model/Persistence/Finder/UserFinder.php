@@ -19,6 +19,20 @@ class UserFinder extends AbstractFinder
         return $this->translateToUser($row);
     }
 
+    public function findByCredentials($email,$password)
+    {
+        $sql = "select * from user where email=:email";
+        $statement = $this->getPdo()->prepare($sql);
+        $statement->bindValue('email',$email);
+        $statement->execute();
+        $row = $statement->fetch(PDO::FETCH_ASSOC);
+
+        if (!password_verify(trim($password), trim($row['password']))) {
+            return null;
+        }
+        return $this->translateToUser($row);
+    }
+
     private function translateToUser($row): User
     {
         $user = new User($row['id'], $row['name'], $row['email'],null);

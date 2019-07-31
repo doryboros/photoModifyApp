@@ -22,9 +22,9 @@ class ProductMapper extends AbstractMapper
             $lastId = $this->getPdo()->lastInsertId();
             $product->setId($lastId);
             $this->insertTags($product);
-        } else {
-            $this->update($product);
+            return;
         }
+            $this->update($product);
     }
 
     /**

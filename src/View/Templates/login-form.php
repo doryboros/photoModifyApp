@@ -16,11 +16,11 @@
 
         <h1 class="jumbotron">Login form</h1>
 
-        <form action="" method="POST" enctype="multipart/form-data">
+        <form action="/loginPost" method="POST" enctype="multipart/form-data">
 
             <div class="form-group">
-                <label for="username" class="well well-sm">Username</label>
-                <input type="text" name="username" id="username" class="form-control">
+                <label for="email" class="well well-sm">Username</label>
+                <input type="text" name="email" id="email" class="form-control">
             </div>
 
             <div class="form-group">

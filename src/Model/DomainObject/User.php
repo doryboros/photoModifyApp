@@ -124,4 +124,6 @@ class User
 
     }
 
+//    public functiomn isNull() : bool
+
 }

@@ -1,11 +1,22 @@
 <?php
 
-
 namespace MyApp\Http;
-
 
 class Session
 {
+    /**
+     * Session constructor.
+     */
+    public function __construct()
+    {
+        if(!isset($_SESSION['loggedIn'])){
+            $_SESSION['loggedIn']=false;
+        }
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+    }
+
     /**
      * @param string|null $key
      * @return mixed
@@ -24,7 +35,7 @@ class Session
      */
     public function setSessionVariable(string $key, $data)
     {
-        if (!isset($_SESSION)) {
+        if (session_status() == PHP_SESSION_NONE) {
             session_start();
         }
         $_SESSION[$key] = $data;
@@ -35,10 +46,19 @@ class Session
      */
     public function unsetSessionData(string $key)
     {
-        if (!isset($_SESSION)) {
+        if (session_status() == PHP_SESSION_NONE) {
             session_start();
         }
         unset($_SESSION[$key]);
+    }
+
+
+    public function isLoggedIn()
+    {
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+        return (isset($_SESSION) && $_SESSION['loggedIn']==true);
     }
 
 }

@@ -5,6 +5,7 @@ namespace MyApp\Model\Persistence\Mapper;
 
 
 use MyApp\Model\DomainObject\User;
+Use PDO;
 
 class UserMapper extends AbstractMapper
 {
@@ -12,20 +13,20 @@ class UserMapper extends AbstractMapper
     {
         if ($user->getId() === null) {
             $this->insert($user);
-        } else {
-            $this->update($user);
+            return;
         }
+
+        $this->update($user);
     }
 
     private function insert(User $user)
     {
-        //TODO: transform user to array row then prepare an INSERT ($this->getPdo()) and execute
         $row = $this->translateToArray($user);
         $sql = "INSERT INTO user (name,email,password) VALUES(:name,:email,:password)";
         $statement = $this->getPdo()->prepare($sql);
         $statement->bindValue('name', $row['name']);
         $statement->bindValue('email', $row['email']);
-        $statement->bindValue('password', $row['password']);
+        $statement->bindValue('password',$row['password']);
         $statement->execute();
     }
 

@@ -27,6 +27,7 @@ class PersistenceFactory
             // taking config from global variable: not pretty but for now does the job
             global $config;
             self::$pdo = new PDO($config['dsn'], $config['user'], $config['password']);
+            self::$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
 
         return self::$pdo;

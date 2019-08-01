@@ -36,9 +36,29 @@ class Tier
     private $productId;
 
     /**
+     * Tier constructor.
+     * @param int $id
+     * @param string $size
+     * @param float $price
+     * @param string $pathWithWatermark
+     * @param string $pathWithoutWatermark
+     * @param int $productId
+     */
+    public function __construct(string $size, float $price, string $pathWithWatermark, string $pathWithoutWatermark, int $productId, int $id=null)
+    {
+        $this->id = $id;
+        $this->size = $size;
+        $this->price = (float)$price;
+        $this->pathWithWatermark = $pathWithWatermark;
+        $this->pathWithoutWatermark = $pathWithoutWatermark;
+        $this->productId = $productId;
+    }
+
+
+    /**
      * @return int
      */
-    public function getId(): int
+    public function getId()
     {
         return $this->id;
     }

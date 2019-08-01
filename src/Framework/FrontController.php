@@ -7,6 +7,9 @@ use MyApp\Http\Request;
 
 class FrontController
 {
+    /**
+     *  Choose controller action
+     */
     public function dispatch(): void
     {
         $pathInfo='';

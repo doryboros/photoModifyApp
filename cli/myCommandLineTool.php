@@ -1,16 +1,19 @@
 <?php
 
-include "input/cli.php";
-include "loadImage/readImg.php";
-include "operations/width.php";
-include "operations/height.php";
-include "operations/format.php";
-include "addWatermark/addWatermark.php";
-include "isHelp/isHelp.php";
-include "output/showHelp.php";
-include "output/showErrors.php";
-include "saveImage/saveImg.php";
-include "output/showSuccess.php";
+ini_set("display_errors", "on");
+
+require __DIR__ . "/input/cli.php";
+require __DIR__ . "/loadImage/readImg.php";
+require __DIR__ . "/operations/width.php";
+require __DIR__ . "/operations/height.php";
+require __DIR__ . "/operations/format.php";
+require __DIR__ . "/addWatermark/addWatermark.php";
+require __DIR__ . "/isHelp/isHelp.php";
+require __DIR__ . "/output/showHelp.php";
+require __DIR__ . "/output/showErrors.php";
+require __DIR__ . "/saveImage/saveImg.php";
+require __DIR__ . "/output/showSuccess.php";
+require __DIR__ . "/error/errors.php";
 
 $arguments=readCommand($argv);
 
@@ -27,7 +30,6 @@ if(!empty($errors)){
     showErrors($errors);
     exit;
 }
-
 
 $payload2 = readImage($payload1);
 

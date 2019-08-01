@@ -31,8 +31,6 @@ abstract class AbstractMapper
         return $this->pdo;
     }
 
-    // TODO extract here what else is common to all mappers
-
     /**
      * @param $domainObject
      * @return array

@@ -53,4 +53,9 @@ class Request
         return $this->pathParameters[$key];
     }
 
+    public function getFiles(string $fileName = null, string $fileProperty = null) : string
+    {
+        return (null === $fileName) ? $_FILES : $_FILES[$fileName][$fileProperty];
+    }
+
 }

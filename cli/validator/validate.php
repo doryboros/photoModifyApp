@@ -43,29 +43,24 @@ function validatePath(string $path):bool {
 
 function hasMandatoryCommands(array $commands):bool {
 
-    $mandatoryCommands=[
-        "--input-file",
-        "--output-file",
-    ];
 
-    foreach ($commands as $key=>$command){
-
-        if(!in_array(trim($key),$mandatoryCommands)) {
-            return false;
-        }
-    }
+//    $mandatoryCommands=[
+//        "--input-file",
+//        "--output-file",
+//    ];
+//
+//    foreach ($commands as $key=>$command){
+//        if(!in_array(trim($key),$mandatoryCommands)) {
+//            var_dump(trim($key),$mandatoryCommands);
+//            return false;
+//        }
+//    }
     return true;
 
 }
 
 function verifyOutputFilePath($path){
-    $pos=strrpos($path,"/");
-    if($pos){
-        $dirPath=substr($path,0,$pos-1);
-        if(!is_dir($dirPath)) return true;
-        return false;
-    }
-    return true;
+    return file_exists(dirname($path));
 }
 
 function hasValidCommands(array $commands):bool{

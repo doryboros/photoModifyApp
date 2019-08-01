@@ -8,6 +8,10 @@ use PDO;
 
 class ProductFinder extends AbstractFinder
 {
+    /**
+     * @param int $id
+     * @return Product
+     */
     public function findById(int $id): Product
     {
         $sql = "select *, (select group_concat(tagName) from tag where id in (select tagId from product_tag where productId = ?)) as tags from product where id = ?";
@@ -19,6 +23,9 @@ class ProductFinder extends AbstractFinder
         return $this->translateToProduct($row);
     }
 
+    /**
+     * @return array
+     */
     public function findAllProducts(): array
     {
         $sql = "select product.*, group_concat(tagName) as tags 
@@ -38,6 +45,10 @@ class ProductFinder extends AbstractFinder
 
     }
 
+    /**
+     * @param string $tag
+     * @return mixed
+     */
     public function findTagId(string $tag)
     {
         $sql = "select id from tag where tagName=?";
@@ -48,6 +59,10 @@ class ProductFinder extends AbstractFinder
         return $row['id'];
     }
 
+    /**
+     * @param $row
+     * @return Product
+     */
     private function translateToProduct($row): Product
     {
         $product = Product::createFromRow($row);

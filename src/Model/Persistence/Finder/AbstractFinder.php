@@ -30,6 +30,4 @@ abstract class AbstractFinder
     {
         return $this->pdo;
     }
-
-    // TODO extract here what esle is common to all finders
 }

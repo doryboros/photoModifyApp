@@ -44,7 +44,11 @@ const URL_MAP = [
     'uploadProductPost' => [
         'controller_action' => "MyApp\Controller\ProductController::uploadProduct",
         'anonymous' => false
-    ]
+    ],
+    'downloadPhoto'  => [
+        'controller_action' => "MyApp\Controller\ProductController::buyProduct",
+        'anonymous' => false
+    ],
 ];
 
 return [

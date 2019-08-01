@@ -9,6 +9,10 @@ use PDO;
 
 class UserFinder extends AbstractFinder
 {
+    /**
+     * @param int $id
+     * @return User
+     */
     public function findById(int $id): User
     {
         $sql = "select * from user where id=?";
@@ -19,7 +23,12 @@ class UserFinder extends AbstractFinder
         return $this->translateToUser($row);
     }
 
-    public function findByCredentials($email,$password)
+    /**
+     * @param $email
+     * @param $password
+     * @return User|null
+     */
+    public function findByCredentials($email, $password)
     {
         $sql = "select * from user where email=:email";
         $statement = $this->getPdo()->prepare($sql);
@@ -33,6 +42,10 @@ class UserFinder extends AbstractFinder
         return $this->translateToUser($row);
     }
 
+    /**
+     * @param $row
+     * @return User
+     */
     private function translateToUser($row): User
     {
         $user = new User($row['id'], $row['name'], $row['email'],null);

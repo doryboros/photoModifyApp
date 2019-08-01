@@ -13,16 +13,16 @@ class ProductMapper extends AbstractMapper
 
     /**
      * @param Product $product
+     * @return string
      */
     public function save(Product $product)
     {
-        var_dump($product);
         if ($product->getId() === null) {
             $this->insert($product);
             $lastId = $this->getPdo()->lastInsertId();
             $product->setId($lastId);
             $this->insertTags($product);
-            return;
+            return $lastId;
         }
             $this->update($product);
     }
@@ -44,9 +44,11 @@ class ProductMapper extends AbstractMapper
         $statement->bindValue('thumbnailPath', $row['thumbnailPath']);
         $statement->bindValue('userId', $row['userId']);
         $statement->execute();
-        return $statement;
     }
 
+    /**
+     * @param Product $product
+     */
     private function insertTags(Product $product)
     {
         $row = $this->translateToArray($product);

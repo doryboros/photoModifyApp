@@ -8,6 +8,27 @@ class OrderItem
 {
 
     /**
+     * @var
+     */
+    private $id;
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param mixed $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
      * @var int
      */
     private $userId;
@@ -21,8 +42,24 @@ class OrderItem
     private $createdAt;
 
     /**
+     * OrderItem constructor.
+     * @param int $userId
+     * @param int $tierId
+     * @param string $createdAt
+     */
+    public function __construct(int $userId, int $tierId, int $id=null, string $createdAt=null)
+    {
+        $this->userId = $userId;
+        $this->tierId = $tierId;
+        $this->createdAt = $createdAt;
+    }
+
+    /**
      * @return int
      */
+
+
+
     public function getUserId(): int
     {
         return $this->userId;

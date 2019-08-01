@@ -18,6 +18,10 @@ class showProductRenderer
         return $session->isLoggedIn() ? "src/View/Templates/header-logged-in.php" : "src/View/Templates/header-not-logged-in.php";
     }
 
+    /**
+     * Returns the session variable with the users name.
+     * @return mixed|string
+     */
     private function getUserName(){
         $session = new Session();
         return $name = $session->isLoggedIn() ? $session->getSessionVariable('username') : '';

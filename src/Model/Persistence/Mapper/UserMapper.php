@@ -9,6 +9,9 @@ Use PDO;
 
 class UserMapper extends AbstractMapper
 {
+    /**
+     * @param User $user
+     */
     public function save(User $user)
     {
         if ($user->getId() === null) {
@@ -19,6 +22,9 @@ class UserMapper extends AbstractMapper
         $this->update($user);
     }
 
+    /**
+     * @param User $user
+     */
     private function insert(User $user)
     {
         $row = $this->translateToArray($user);
@@ -30,6 +36,9 @@ class UserMapper extends AbstractMapper
         $statement->execute();
     }
 
+    /**
+     * @param User $user
+     */
     private function update(User $user)
     {
         //TODO: transform user to array row then prepare an UPDATE ($this->getPdo()) and execute

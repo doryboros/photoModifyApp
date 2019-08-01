@@ -12,7 +12,7 @@
                 <p class="card-text">
                     Product description:  <?= $product->getDescription() ?>
                 </p>
-                <a href="product/id/<?php echo $product->getId() ?>" class="btn btn-primary">Go somewhere</a>
+                <a href="product/id/<?php echo $product->getId() ?>" class="btn btn-primary">View details</a>
             </div>
         </div>
 
